@@ -1,24 +1,50 @@
-# README
+# Rails 7 with Sidekiq
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sidekiq allows Rails to launch any task in the background.
+Let's see how, from zero to production.
 
-Things you may want to cover:
+## Prerequisites
+
+Here are the tools we will use in this tutorial :
 
 * Ruby version
 
-* System dependencies
+```bash
+  ruby -v
+  ruby 3.1.1p18 // at least version 3
+```
+* npm version
 
-* Configuration
+```bash
+  npm -v
+  8.12.1 // at least version 7.1
+```
 
-* Database creation
+* Yarn version
 
-* Database initialization
+```bash
+  yarn -v
+  1.22.15 // at least 1.22.10
+```
 
-* How to run the test suite
+* PostgreSQL version
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+  psql --version
+  psql (PostgreSQL) 14.2
+```
 
-* Deployment instructions
+* Redis
 
-* ...
+  Run to determine if redis is running
+
+```bash
+  redis-cli ping
+```
+
+* Foreman
+
+```bash
+  foreman -v
+  0.87.2
+```
