@@ -48,3 +48,8 @@ Here are the tools we will use in this tutorial :
   foreman -v
   0.87.2
 ```
+
+## License & Copyright
+© 2022 Don Forrest Usbal (Don-PhDev)
+
+Licensed under the [MIT License](LICENSE)
