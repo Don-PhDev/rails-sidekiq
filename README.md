@@ -59,6 +59,12 @@ Here are the tools we will use in this tutorial :
   bundle exec rails new . --force -d=postgresql --minimal
 ```
 
+* Create a default controller
+```bash
+  echo "class WelcomeController < ApplicationController" > app/controllers/welcome_controller.rb
+  echo "end" >> app/controllers/welcome_controller.rb
+```
+
 ## License & Copyright
 © 2022 Don Forrest Usbal (Don-PhDev)
 
