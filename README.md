@@ -49,6 +49,16 @@ Here are the tools we will use in this tutorial :
   0.87.2
 ```
 
+## Create a new Rails 7 app
+
+```bash
+  mkdir sidekiqrails && cd sidekiqrails  
+  echo "source 'https://rubygems.org'" > Gemfile  
+  echo "gem 'rails', '7.0.1'" >> Gemfile  
+  bundle install  
+  bundle exec rails new . --force -d=postgresql --minimal
+```
+
 ## License & Copyright
 © 2022 Don Forrest Usbal (Don-PhDev)
 
