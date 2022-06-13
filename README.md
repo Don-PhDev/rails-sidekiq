@@ -79,6 +79,12 @@ Here are the tools we will use in this tutorial :
   echo '<h1>This is h1 title</h1>' > app/views/welcome/index.html.erb
 ```
 
+* Create database and schema.rb
+```bash
+  bin/rails db:create
+  bin/rails db:migrate
+```
+
 ## License & Copyright
 © 2022 Don Forrest Usbal (Don-PhDev)
 
