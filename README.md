@@ -65,6 +65,14 @@ Here are the tools we will use in this tutorial :
   echo "end" >> app/controllers/welcome_controller.rb
 ```
 
+* Create a default route
+```bash
+  echo "Rails.application.routes.draw do" > config/routes.rb
+  echo '  get "welcome/index"' >> config/routes.rb
+  echo '  root to: "welcome#index"' >> config/routes.rb
+  echo 'end' >> config/routes.rb
+```
+
 ## License & Copyright
 © 2022 Don Forrest Usbal (Don-PhDev)
 
