@@ -73,6 +73,12 @@ Here are the tools we will use in this tutorial :
   echo 'end' >> config/routes.rb
 ```
 
+* Create a default view
+```bash
+  mkdir app/views/welcome
+  echo '<h1>This is h1 title</h1>' > app/views/welcome/index.html.erb
+```
+
 ## License & Copyright
 © 2022 Don Forrest Usbal (Don-PhDev)
 
