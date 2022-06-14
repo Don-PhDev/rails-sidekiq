@@ -85,6 +85,18 @@ Here are the tools we will use in this tutorial :
   bin/rails db:migrate
 ```
 
+#### Then open application.rb and uncomment line 6 as follow :
+* inside config/application.rb
+```bash
+  require_relative "boot"
+
+  require "rails"
+  # Pick the frameworks you want:
+  require "active_model/railtie"
+  require "active_job/railtie" # <== Uncomment
+  # ... everything else remains the same
+```
+
 ## License & Copyright
 © 2022 Don Forrest Usbal (Don-PhDev)
 
