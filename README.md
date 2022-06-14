@@ -86,7 +86,7 @@ Let's see how, from zero to production.
 ```
 
 #### Then open application.rb and uncomment line 6 as follow :
-* inside config/application.rb
+* Inside config/application.rb
 ```bash
   require_relative "boot"
 
@@ -95,6 +95,19 @@ Let's see how, from zero to production.
   require "active_model/railtie"
   require "active_job/railtie" # <== Uncomment
   # ... everything else remains the same
+```
+
+#### Then create the parent Class of all jobs :
+* Create a jobs directory inside app
+```bash
+  mkdir app/jobs && cd app/jobs
+```
+
+* Create a application_job.rb file, then paste this code
+```bash
+  # inside app/jobs/application_job.rb
+  class ApplicationJob < ActiveJob::Base
+  end
 ```
 
 ## License & Copyright
