@@ -5,7 +5,7 @@ Let's see how, from zero to production.
 
 ## Prerequisites
 
-Here are the tools we will use in this tutorial :
+#### Here are the tools we will use in this tutorial :
 
 * Ruby version
 
