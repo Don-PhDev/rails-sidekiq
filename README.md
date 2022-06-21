@@ -110,6 +110,26 @@ Let's see how, from zero to production.
   end
 ```
 
+## Add redis and sidekiq gems to your Rails app
+* Open your Gemfile, and add at the very bottom
+```bash
+  gem "redis"
+  gem "sidekiq"
+```
+
+* Run in your terminal
+```bash
+  bundle install
+```
+
+* Then add the following line inside config/application.rb
+```bash
+  # ...
+  class Application < Rails::Application
+    config.active_job.queue_adapter = :sidekiq
+  # ...
+```
+
 ## License & Copyright
 © 2022 Don Forrest Usbal (Don-PhDev)
 
