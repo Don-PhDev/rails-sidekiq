@@ -130,6 +130,22 @@ Let's see how, from zero to production.
   # ...
 ```
 
+## Create an example job
+* Create a new file under app/jobs/example_job.rb
+```bash
+class ExampleJob < ApplicationJob
+  queue_as :default
+
+  def perform(*args)
+    # Simulates a long, time-consuming task
+    sleep 5
+    # Will display current time, milliseconds included
+    p "hello from ExampleJob #{Time.now().strftime('%F - %H:%M:%S.%L')}"
+  end
+
+end
+```
+
 ## License & Copyright
 © 2022 Don Forrest Usbal (Don-PhDev)
 
